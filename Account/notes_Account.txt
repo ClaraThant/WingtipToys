@@ -1,0 +1,2 @@
+Register.aspx page
+Login.aspx page        those two are for storing, creating and validating user credentials

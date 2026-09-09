@@ -1,0 +1,32 @@
+﻿//each instance = a row in DB, a property of an instance = a col
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+
+namespace WingtipToys.Models
+{
+	public class Product
+	{
+		[ScaffoldColumn(false)]
+		public int ProductID { get; set; }
+
+		[Required, StringLength(100), Display(Name = "Name")]
+		public string ProductName { get; set; }
+
+        [Required, StringLength(10000), Display(Name = "Product Description"), DataType(DataType.MultilineText)]
+        public string Description { get; set; }
+
+		public string ImagePath { get; set; }
+
+		[DisplayName("Price")]
+		public double? UnitPrice { get; set; }
+
+		public int? CategoryID { get; set; }
+
+		public virtual Category Category { get; set; }
+
+    }
+}

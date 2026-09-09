@@ -1,0 +1,7 @@
+Default.aspx - first page displayed when it is run
+Site.Master - for consistant layout and standardization of the website -> this master page merges with individual content pages and form a final page
+Global.axax - optional file -> responsible for application-level events and settings (eg, http modules)
+Web.config - configuration file for the application (eg, database connection strings, authentication settings, etc.)
+
+
+

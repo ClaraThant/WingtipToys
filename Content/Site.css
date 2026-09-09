@@ -1,4 +1,9 @@
-﻿/* Wrapping element */
+﻿/* Offset the fixed navbar so page content isn't hidden beneath it */
+body {
+    padding-top: 70px;
+}
+
+/* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */
 .body-content {
     margin-top: 25px;
@@ -27,4 +32,11 @@ input[type="select"] {
     .body-content {
         padding: 0;
     }
+}
+
+/* Site logo in the header */
+.site-logo {
+    height: 250px;
+    width: auto;
+    margin: 0 auto;
 }
