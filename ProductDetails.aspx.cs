@@ -9,22 +9,26 @@ using System.Web.ModelBinding;
 
 namespace WingtipToys
 {
-    public partial class ProductList : System.Web.UI.Page
+    public partial class ProductDetails : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        public IQueryable<Product> GetProducts([QueryString("id")] int? categoryId) //int? -> either an int or Null
+        public IQueryable<Product> GetProduct([QueryString("productID")] int? productId)
         {
             var _db = new WingtipToys.Models.ProductContext();
             IQueryable<Product> query = _db.Products;
-            if (categoryId.HasValue && categoryId > 0) //if id exists in the URL, query of all products w
+            if (productId.HasValue && productId > 0)
             {
-                query = query.Where(p => p.CategoryID == categoryId);
+                query = query.Where(p => p.ProductID == productId);
             }
-            return query; //if null -> display all products
+            else
+            {
+                query = null;
+            }
+            return query;
         }
     }
 }

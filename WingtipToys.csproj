@@ -186,7 +186,46 @@
     <Content Include="Global.asax" />
     <Content Include="Images\logo.png" />
     <Content Include="notes.txt" />
+    <Content Include="ProductDetails.aspx" />
     <Content Include="ProductList.aspx" />
+    <Content Include="Catalog\Images\boatbig.png" />
+    <Content Include="Catalog\Images\boatpaper.png" />
+    <Content Include="Catalog\Images\boatsail.png" />
+    <Content Include="Catalog\Images\busdouble.png" />
+    <Content Include="Catalog\Images\busgreen.png" />
+    <Content Include="Catalog\Images\busred.png" />
+    <Content Include="Catalog\Images\carconvert.png" />
+    <Content Include="Catalog\Images\carearly.png" />
+    <Content Include="Catalog\Images\carfast.png" />
+    <Content Include="Catalog\Images\carfaster.png" />
+    <Content Include="Catalog\Images\carracer.png" />
+    <Content Include="Catalog\Images\planeace.png" />
+    <Content Include="Catalog\Images\planeglider.png" />
+    <Content Include="Catalog\Images\planepaper.png" />
+    <Content Include="Catalog\Images\planeprop.png" />
+    <Content Include="Catalog\Images\rocket.png" />
+    <Content Include="Catalog\Images\truckbig.png" />
+    <Content Include="Catalog\Images\truckearly.png" />
+    <Content Include="Catalog\Images\truckfire.png" />
+    <Content Include="Catalog\Images\Thumbs\boatbig.png" />
+    <Content Include="Catalog\Images\Thumbs\boatpaper.png" />
+    <Content Include="Catalog\Images\Thumbs\boatsail.png" />
+    <Content Include="Catalog\Images\Thumbs\busdouble.png" />
+    <Content Include="Catalog\Images\Thumbs\busgreen.png" />
+    <Content Include="Catalog\Images\Thumbs\busred.png" />
+    <Content Include="Catalog\Images\Thumbs\carconvert.png" />
+    <Content Include="Catalog\Images\Thumbs\carearly.png" />
+    <Content Include="Catalog\Images\Thumbs\carfast.png" />
+    <Content Include="Catalog\Images\Thumbs\carfaster.png" />
+    <Content Include="Catalog\Images\Thumbs\carracer.png" />
+    <Content Include="Catalog\Images\Thumbs\planeace.png" />
+    <Content Include="Catalog\Images\Thumbs\planeglider.png" />
+    <Content Include="Catalog\Images\Thumbs\planepaper.png" />
+    <Content Include="Catalog\Images\Thumbs\planeprop.png" />
+    <Content Include="Catalog\Images\Thumbs\rocket.png" />
+    <Content Include="Catalog\Images\Thumbs\truckbig.png" />
+    <Content Include="Catalog\Images\Thumbs\truckearly.png" />
+    <Content Include="Catalog\Images\Thumbs\truckfire.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -388,6 +427,13 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ProductContext.cs" />
     <Compile Include="Models\ProductDatabaseInitializer.cs" />
+    <Compile Include="ProductDetails.aspx.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductDetails.aspx.designer.cs">
+      <DependentUpon>ProductDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProductList.aspx.cs">
       <DependentUpon>ProductList.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
